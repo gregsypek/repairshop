@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import React from "react";
 import NavButton from "./NavButton";
+import { ModeToggle } from "./ModeToggle";
 
 const Header = () => {
 	return (
@@ -23,6 +24,7 @@ const Header = () => {
 				<div className="flex items-center">
 					<NavButton href="/tickets" label="Tickets" icon={File} />
 					<NavButton href="/customers" label="Customers" icon={UsersRound} />
+					<ModeToggle />
 				</div>
 			</div>
 		</header>
