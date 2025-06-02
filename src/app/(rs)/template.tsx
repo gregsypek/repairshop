@@ -1,5 +1,11 @@
-import React from "react";
-
-export default function Template({ children }: { children: React.ReactNode }) {
-	return <div className="animate-appear">{children}</div>;
+export default async function Template({
+    children,
+}: {
+    children: React.ReactNode
+}) {
+    return (
+        <div className="animate-appear">
+            {children}
+        </div>
+    )
 }
